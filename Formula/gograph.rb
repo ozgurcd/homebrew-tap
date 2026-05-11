@@ -5,20 +5,20 @@
 class Gograph < Formula
   desc "A fast, AST-based repository structure and call graph analyzer for Go."
   homepage "https://github.com/ozgurcd/gograph"
-  version "1.4.32"
+  version "1.4.33"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.32/gograph_Darwin_x86_64.tar.gz"
-      sha256 "9b8f451a656f3b9ffd6f9b84cfe1c67a157ce3c3968bb0a333993e6fe305f72d"
+      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.33/gograph_Darwin_x86_64.tar.gz"
+      sha256 "269721933db3b38a465005191d60f9395ae0d8972d950904c4fbcfdd8d56fcca"
 
       define_method(:install) do
         bin.install "gograph"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.32/gograph_Darwin_arm64.tar.gz"
-      sha256 "e65d2b2fadc8ef2ee512c8dd4218575c3421c9220207663432c296b9ba82bd09"
+      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.33/gograph_Darwin_arm64.tar.gz"
+      sha256 "ebe436541d3b1a724e89f0b49ca79fdff5de668a52e1ece7dc63a8e2a51e109e"
 
       define_method(:install) do
         bin.install "gograph"
@@ -28,15 +28,15 @@ class Gograph < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.32/gograph_Linux_x86_64.tar.gz"
-      sha256 "9b0a8581c0ae9be0080fcbc6680d1293a9d0ad7fd1f3c3029942517a8cb7873f"
+      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.33/gograph_Linux_x86_64.tar.gz"
+      sha256 "369640947bfaf869fcd5a691c4256fb46bcf38f8c1effba50410549ba55976e3"
       define_method(:install) do
         bin.install "gograph"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.32/gograph_Linux_arm64.tar.gz"
-      sha256 "0e6ba18930115449edca47ec0896af581a3a498659eb4907803474b9104ad477"
+      url "https://github.com/ozgurcd/gograph/releases/download/v1.4.33/gograph_Linux_arm64.tar.gz"
+      sha256 "cbc1b4662ac94aa6a31baaaed8ccd4783a525cb9b9b6570e949c04a6bf5225e5"
       define_method(:install) do
         bin.install "gograph"
       end
