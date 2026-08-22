@@ -1,8 +1,8 @@
 class Scrinium < Formula
   desc "Governed wiki MCP server for AI coding agents"
   homepage "https://github.com/ozgurcd/scrinium"
-  url "https://github.com/ozgurcd/scrinium/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "fbbc9cdeb884b55b2e3642e1f8de52a93f03de6e6872800d92b15ecb0ce69465"
+  url "https://github.com/ozgurcd/scrinium/archive/refs/tags/v0.2.2.tar.gz"
+  sha256 "a24892f06b4e7b37d0f7b73c540555b4740fbbbb3d7be965e5f6ef68540e08ec"
   license "MIT"
 
   depends_on "go" => :build
