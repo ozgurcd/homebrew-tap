@@ -1,8 +1,8 @@
 class Rulefloor < Formula
   desc "Machine-checked rule ledger: pin invariants to the tests that prove them"
   homepage "https://github.com/ozgurcd/rulefloor"
-  url "https://github.com/ozgurcd/rulefloor/archive/refs/tags/v0.2.0.tar.gz"
-  sha256 "0b786b90caca8a57868ecee234f8a1c835809c39cd53ee28a330c085fbaae7f1"
+  url "https://github.com/ozgurcd/rulefloor/archive/refs/tags/v0.3.0.tar.gz"
+  sha256 "62b7c6c3f35b5bf8aefd2625079e290d5b9af7dd57152a3a0281a2e0ea3d2954"
   license "MIT"
 
   depends_on "go" => :build
