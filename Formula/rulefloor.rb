@@ -1,8 +1,8 @@
 class Rulefloor < Formula
   desc "Detect drift between declared invariants and bound checks"
   homepage "https://github.com/ozgurcd/rulefloor"
-  url "https://github.com/ozgurcd/rulefloor/archive/refs/tags/v0.4.0.tar.gz"
-  sha256 "27565e76af0bff5d0c6910687555e70bf5b246d04924d0f6f01ad6b069eef2f2"
+  url "https://github.com/ozgurcd/rulefloor/archive/refs/tags/v0.5.0.tar.gz"
+  sha256 "b30562969221b1e453bfcdc69f9ec23057ebb5dd77c153ee32c613c29020887f"
   license "MIT"
 
   depends_on "go" => :build
