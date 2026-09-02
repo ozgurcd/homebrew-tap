@@ -5,21 +5,21 @@ class Rulefloor < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.0/rulefloor_0.8.0_darwin_arm64.tar.gz"
-      sha256 "520a273ea522d45092477e7055bd040228eca084415472f5fd14debda4300e2f"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.1/rulefloor_0.8.1_darwin_arm64.tar.gz"
+      sha256 "ba9d5054e4c311d68eeab4ff18800c458188885102c48f985220e354849217d2"
     else
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.0/rulefloor_0.8.0_darwin_amd64.tar.gz"
-      sha256 "12084ed49fedebee39fcb72f412101f59c0ca36890851c88e4809c3d58959b83"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.1/rulefloor_0.8.1_darwin_amd64.tar.gz"
+      sha256 "b387b582fc23cdce52fda5e07d1e03725cf91af9366c465f9902230b012d2101"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.0/rulefloor_0.8.0_linux_arm64.tar.gz"
-      sha256 "36fc59b1d083d4a9f094442dc79a470465c09abdd365cdad5f72a9df9ed896c4"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.1/rulefloor_0.8.1_linux_arm64.tar.gz"
+      sha256 "2d9aa5c0f02058a827df7ffd5fe84e2c55eacb081e9b709cc2ffe8cb28357759"
     else
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.0/rulefloor_0.8.0_linux_amd64.tar.gz"
-      sha256 "9b2f2c11ebeda4d8bf82bb14f91a4dbfe06d79960e3cc0795d50f7814cee3175"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.8.1/rulefloor_0.8.1_linux_amd64.tar.gz"
+      sha256 "c4605008455a87651f8f1ad43bf420ba1bec898000db6e45a98782ac8ff291d4"
     end
   end
 
@@ -31,7 +31,9 @@ class Rulefloor < Formula
     assert_match "rulefloor v#{version}", shell_output("#{bin}/rulefloor --version")
     assert_match "rulefloor.version.v1", shell_output("#{bin}/rulefloor version --json")
     assert_match '"version_agreement":"pass"', shell_output("#{bin}/rulefloor version --json")
-    assert_match "rulefloor.capabilities.v1", shell_output("#{bin}/rulefloor capabilities --json")
+    capabilities = shell_output("#{bin}/rulefloor capabilities --json")
+    assert_match "rulefloor.capabilities.v1", capabilities
+    assert_match "ledger-diff-sentence-sha256", capabilities
     system bin/"rulefloor", "init"
     assert_match "check OK", shell_output("#{bin}/rulefloor check")
   end
