@@ -1,46 +1,46 @@
 class Legattus < Formula
   desc "Deterministic orchestration for coding-agent tool workflows"
   homepage "https://github.com/ozgurcd/legattus"
-  version "0.1.7"
+  version "0.1.8"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569667583",
+      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569818024",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
             "X-GitHub-Api-Version: 2022-11-28",
           ]
-      sha256 "939ab12907fec1c1bfec2164083727177e965bdeed2ac3345c317fd54a5f9564"
+      sha256 "7c8e32fc856a0e1871e14cb31fb343a5569f377adc275da944f8802b63c8720c"
     else
-      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569667584",
+      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569818025",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
             "X-GitHub-Api-Version: 2022-11-28",
           ]
-      sha256 "8b6ea8a59094423692ef8c2d981e904de59a5f4afbd2372321cfc83c519892e5"
+      sha256 "1e5f076b563f0473db9a3e518eaaf234e8e535d579592521bed1883485a5cd0f"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569667586",
+      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569818021",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
             "X-GitHub-Api-Version: 2022-11-28",
           ]
-      sha256 "7645a14a2b7a89a0b507b270899196eab8c061ceade0741fda18929221bfba0e"
+      sha256 "62fa1d4f743498833e516487d52b4a6737bb41f8f4b04043667f18262c6e65f7"
     else
-      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569667585",
+      url "https://api.github.com/repos/ozgurcd/legattus/releases/assets/569818023",
           headers: [
             "Accept: application/octet-stream",
             "Authorization: Bearer #{ENV.fetch("HOMEBREW_GITHUB_API_TOKEN", "")}",
             "X-GitHub-Api-Version: 2022-11-28",
           ]
-      sha256 "740f4632a2fb450197d16c7824775068d9911c6096f429730b3132e1b311cea6"
+      sha256 "c4427f3a113d1c94fcfedab9a90cfa2fa80d883c037affd3e38447903dfdf795"
     end
   end
 
@@ -50,7 +50,7 @@ class Legattus < Formula
 
   test do
     version_document = shell_output("#{bin}/legattus version --json")
-    assert_match '"version":"v0.1.7"', version_document
+    assert_match '"version":"v0.1.8"', version_document
     assert_match '"version_agreement":"pass"', version_document
 
     capabilities = shell_output("#{bin}/legattus capabilities --json")
