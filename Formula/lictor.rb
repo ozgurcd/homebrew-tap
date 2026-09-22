@@ -1,26 +1,26 @@
 class Lictor < Formula
   desc "Identuum-specific gate execution"
   homepage "https://github.com/ozgurcd/lictor"
-  version "0.4.1"
+  version "0.4.2"
   license :cannot_represent
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.1/lictor_0.4.1_darwin_arm64.tar.gz"
-      sha256 "2c5f1b1f5f13fef015484b96b583b29e22b3825ec4c5c6c7231e7a625693c5c4"
+      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.2/lictor_0.4.2_darwin_arm64.tar.gz"
+      sha256 "ac39ce7d94c9d9623840c2ec203bae1e42d1435570fc9620079edcde756add44"
     else
-      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.1/lictor_0.4.1_darwin_amd64.tar.gz"
-      sha256 "c64b20ead6dcc0898db25b216b9d3944107e366946b63fbe48be5b0e1d701507"
+      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.2/lictor_0.4.2_darwin_amd64.tar.gz"
+      sha256 "c50806f8adbf82a7820d9aca86546c347b1b8162621f1e44ea99f45f26d28ac2"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.1/lictor_0.4.1_linux_arm64.tar.gz"
-      sha256 "96d0babe273a6cbcd5c684012a3af47ba607e79df69511618f37a745c58d8eaa"
+      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.2/lictor_0.4.2_linux_arm64.tar.gz"
+      sha256 "5e734761bf2564b7f0a78ce5ca4e1b26f26fb0c2b2fa2404fafa1ff040dd7964"
     else
-      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.1/lictor_0.4.1_linux_amd64.tar.gz"
-      sha256 "61f13b580e30a05a5a028b75f152347f3d1612a9267cd945237ae669b1fcd92b"
+      url "https://github.com/ozgurcd/lictor/releases/download/v0.4.2/lictor_0.4.2_linux_amd64.tar.gz"
+      sha256 "0757b9d1842c0ef0fc1446a6b94fc1128a16fb465ab6fb221f3923a74bdc54c6"
     end
   end
 
@@ -31,6 +31,6 @@ class Lictor < Formula
   test do
     version_document = shell_output("#{bin}/lictor version --json")
     assert_match '"schema_version":"lictor.version.v1"', version_document
-    assert_match '"version":"v0.4.1"', version_document
+    assert_match '"version":"v0.4.2"', version_document
   end
 end
