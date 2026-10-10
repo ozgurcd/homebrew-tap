@@ -8,26 +8,26 @@ cask "nuntius" do
     binary "nuntius-menubar"
   end
 
-  version "0.3.1"
+  version "0.3.2"
 
   on_macos do
     on_intel do
-      sha256 "d4e8de06634273a0c107fc0506c34b5043328f52e2d69279d608d1ea0349c34e"
+      sha256 "9d11bf33bf8233ae4421b0063ad6c0daf70de57d0f5088af39e22f4f934ac455"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "a26c005fb5348145dbcfa24147347a8733cf722e71e208cf4ee3af51c1c33cf2"
+      sha256 "774e622d9c8cd9601ebed75b7aeeb7d6c843a5eff05959121d32c07db8604338"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "defd81dcaef518bb2ee4baa645904f812406513a43c2efadf5214a891f859f46"
+      sha256 "9dcc0363bed526d0ab9c70a3d5cacaa2c0f747ceb55dc3fefe3e5605e691d54b"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "c4e11a0edf1e1b264c71a5e5af113d96ea6b3214f7b653e8c6138dc493171ca1"
+      sha256 "87014df37835a83e64ae53a30cd5a2dd3f69474a5ba632b0094d92fc03ad2aa6"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_arm64.tar.gz"
     end
   end
