@@ -8,32 +8,32 @@ cask "nuntius" do
     binary "nuntius-menubar"
   end
 
-  version "0.3.0"
+  version "0.3.1"
 
   on_macos do
     on_intel do
-      sha256 "26087460a6552a3243a0d9661e4eccd30d72228b1de4087196634d6b80073051"
+      sha256 "d4e8de06634273a0c107fc0506c34b5043328f52e2d69279d608d1ea0349c34e"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "e7a1d0ab6126e32ea57492286cb9a98e869068d28065bf052fac583e7c7d4187"
+      sha256 "a26c005fb5348145dbcfa24147347a8733cf722e71e208cf4ee3af51c1c33cf2"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "3584230bca6642b5e5e246f58168eee41f2aa3d5c5c2e6280ff71fbdda7dfdc5"
+      sha256 "defd81dcaef518bb2ee4baa645904f812406513a43c2efadf5214a891f859f46"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "e66235dd503c207297334965b207670b2deabea3bbfebeef90d8f4fd35628ce8"
+      sha256 "c4e11a0edf1e1b264c71a5e5af113d96ea6b3214f7b653e8c6138dc493171ca1"
       url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_arm64.tar.gz"
     end
   end
 
   name "nuntius"
-  desc "Local MCP run manager for the judge in Claude Desktop"
+  desc "Local MCP server and CLI for coordinating coding agents"
   homepage "https://github.com/ozgurcd/nuntius"
 
   livecheck do
