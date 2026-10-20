@@ -8,33 +8,33 @@ cask "nuntius" do
     binary "nuntius-menubar"
   end
 
-  version "0.5.6"
+  version "0.6.0"
 
   on_macos do
     on_intel do
-      sha256 "fdbb097d01dffab45ce75db9c0e1480b258e1f393c76e6bde28876010f00d37a"
-      url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_x86_64.tar.gz"
+      sha256 "d91ca16e0de7ff17a7beb4cb3fd828d31f4973503a203d376e30ac08202ae4f8"
+      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Darwin_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "dd2ad3c7cba5bb1790265ce6c57182073b8fff1be9be2bf440bdce50475c11bc"
-      url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Darwin_arm64.tar.gz"
+      sha256 "71a933457336d3466e075d3c16054875a6a7fb219f8a0de6ba369dbe32d0d016"
+      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "653a7657fdc4a13ba5245d51a089dbe9bee29f397ed68dc5954eaa077e1227d0"
-      url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_x86_64.tar.gz"
+      sha256 "1349bfebdc4fc91017adb24f729b2fe9cab098b66f4094cfa70200b48b44efd4"
+      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "481240f70ff00363e3c9e7be60dada2dde15af1fd79f62530328f0bd17d0d0ec"
-      url "https://github.com/ozgurcd/nuntius/releases/download/v#{version}/nuntius_Linux_arm64.tar.gz"
+      sha256 "3cf5fe48c55aeec1e15100a1700e93d44f13830eaaa3f1e5150fe35087c1abea"
+      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_arm64.tar.gz"
     end
   end
 
   name "nuntius"
   desc "Local MCP server and CLI for coordinating coding agents"
-  homepage "https://github.com/ozgurcd/nuntius"
+  homepage "https://github.com/ozgurcd/homebrew-tap"
 
   livecheck do
     skip "Auto-generated on release."
