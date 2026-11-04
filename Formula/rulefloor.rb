@@ -5,21 +5,21 @@ class Rulefloor < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.1/rulefloor_0.9.1_darwin_arm64.tar.gz"
-      sha256 "5a18837d9380bf5b471225924cc5137a705c672570e42772545eeaaddd547dfe"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.2/rulefloor_0.9.2_darwin_arm64.tar.gz"
+      sha256 "4e9a88ecb703f1a920f16dbfbb09b3043abf9497e1044ccdc9824c06ce2d3221"
     else
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.1/rulefloor_0.9.1_darwin_amd64.tar.gz"
-      sha256 "553f5ba0da928a5a56238d6b084f90d9cc4c17732e2d6b418cd6c5abcb8f3540"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.2/rulefloor_0.9.2_darwin_amd64.tar.gz"
+      sha256 "26dec112499895eb7c6ee8959748fe024b441611448fe7c7ff680c003e25e88a"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.1/rulefloor_0.9.1_linux_arm64.tar.gz"
-      sha256 "37015719d38a223e8706a5fcae844c0f858c90d0d2b1c96bb1c5f70864c538ba"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.2/rulefloor_0.9.2_linux_arm64.tar.gz"
+      sha256 "e97091f9f102b2f7bec6cbcec123783281d120e63c2b5b3fa07f2ac4122ac96d"
     else
-      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.1/rulefloor_0.9.1_linux_amd64.tar.gz"
-      sha256 "989a7af3b4c83486e1bc600f9efb2030bcbf4371b0261df3f47c5d92b584acf3"
+      url "https://github.com/ozgurcd/rulefloor/releases/download/v0.9.2/rulefloor_0.9.2_linux_amd64.tar.gz"
+      sha256 "f40c762d7937442347548f4a45c2e99da964f00f6862dacc327e9c0161832de1"
     end
   end
 
