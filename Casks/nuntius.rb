@@ -10,22 +10,22 @@ cask "nuntius" do
     binary "nuntius-menubar"
   end
 
-  version "0.6.21"
+  version "0.6.22"
 
   on_macos do
     on_arm do
-      sha256 "a26b1edc690e07dac806ece2b6e1814bded91494c23a5fe6c234691fc50d892a"
+      sha256 "ea48e1f6558dc6ee46d59772e45f314c05cd898364d94836c5b5276d2e2dce05"
       url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "2d08b25f168a40da1e951c699d0618cdc871ab9f6e5e329432f9ab53a70ba550"
+      sha256 "85317236bef9d5a2811c7812ee90028bb61ba19fc520fe8e83f914c1f2a763d1"
       url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_x86_64.tar.gz"
     end
     on_arm do
-      sha256 "dadaf02533f361172c550aa40178ff210e1265bf18756e77d5eaddc003586d12"
+      sha256 "b907bcaaf32c93da2eab2de0e2c7f4cf1d6900d92415585f35bf0e9c2a9cf264"
       url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_arm64.tar.gz"
     end
   end
