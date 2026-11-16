@@ -6,32 +6,18 @@ cask "nuntius" do
     app "Nuntius Menu Bar.app"
     binary "#{appdir}/Nuntius Menu Bar.app/Contents/MacOS/nuntius-menubar", target: "nuntius-menubar"
   end
-  on_linux do
-    binary "nuntius-menubar"
-  end
 
-  version "0.6.22"
+  version "0.6.23"
 
   on_macos do
     on_arm do
-      sha256 "ea48e1f6558dc6ee46d59772e45f314c05cd898364d94836c5b5276d2e2dce05"
+      sha256 "c7e0e1d0bfa54c656cdfdea0e08021886b9ecb76ff4828a4c94667a7ac3e29a8"
       url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
 
-  on_linux do
-    on_intel do
-      sha256 "85317236bef9d5a2811c7812ee90028bb61ba19fc520fe8e83f914c1f2a763d1"
-      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_x86_64.tar.gz"
-    end
-    on_arm do
-      sha256 "b907bcaaf32c93da2eab2de0e2c7f4cf1d6900d92415585f35bf0e9c2a9cf264"
-      url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Linux_arm64.tar.gz"
-    end
-  end
-
   name "nuntius"
-  desc "Local MCP server and CLI for coordinating coding agents (Apple silicon only on macOS)"
+  desc "Local MCP server and CLI for coordinating coding agents (macOS only, Apple silicon)"
   homepage "https://github.com/ozgurcd/homebrew-tap"
 
   livecheck do
