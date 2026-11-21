@@ -7,11 +7,11 @@ cask "nuntius" do
     binary "#{appdir}/Nuntius Menu Bar.app/Contents/MacOS/nuntius-menubar", target: "nuntius-menubar"
   end
 
-  version "0.6.24"
+  version "0.6.25"
 
   on_macos do
     on_arm do
-      sha256 "375fe0b0bbc093f6f742c60f0bf9763cc49405c31c482e403e4846350a25679a"
+      sha256 "4ec25458f368aa71d01e5a718556c60d815811aaec0b5db742138c5b30260be4"
       url "https://github.com/ozgurcd/homebrew-tap/releases/download/nuntius-v#{version}/nuntius_Darwin_arm64.tar.gz"
     end
   end
